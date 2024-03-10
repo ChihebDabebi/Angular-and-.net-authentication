@@ -1,0 +1,80 @@
+mat-sidenav {
+  width: 200px;
+  background-color: #f2f2f2;
+  height: 100%;
+  position: fixed;
+
+}
+
+mat-nav-list {
+  margin-top: 20px;
+}
+
+.active {
+  background-color: #e0e0e0;
+}
+
+mat-toolbar {
+  background-color: #1976d2;
+  color: white;
+}
+
+.mat-icon {
+  margin-right: 10px;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.dashboard-card {
+  margin: 20px;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+.dashboard-card h2 {
+  margin: 0;
+}
+
+.dashboard-card p {
+  margin-top: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  mat-sidenav {
+    width: 100%;
+  }
+
+  .spacer {
+    display: none;
+  }
+}
+.mat-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1976d2;
+  color: white;
+  height: 64px;
+  padding: 0 16px;
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  justify-content: flex-end; /* Add this line */
+}
+
+.user-button {
+  display: flex;
+  align-items: center;
+}
+.spacer {
+  flex: 1 1 auto;
+  margin: 0 16px;
+}
+
